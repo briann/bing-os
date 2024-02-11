@@ -34,12 +34,12 @@ modules:
 
   - type: akmods
     install:
-      # - openrazer
-      # - openrgb
+      - openrazer
+      - openrgb
       - xpadneo
       - xone
       - wl
-      # - v4l2loopback
+      - v4l2loopback
 
   - type: rpm-ostree
     repos:
