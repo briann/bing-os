@@ -21,6 +21,27 @@ modules:
                   # config directory on ostree. Read more in the files module's README
       - etc: /etc 
 
+  - type: script
+    scripts:
+      # this sets up the proper policy & signing files for signed images to work
+      - signing.sh
+
+  - type: bling
+    install:
+      - ublue-update
+      - dconf-update-service
+      - 1password
+      - laptop
+
+  - type: akmods
+    install:
+      - openrazer
+      - openrgb
+      - xpadneo
+      - xonedo
+      - wl
+      - v4l2loopback
+
   - type: rpm-ostree
     repos:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
@@ -129,26 +150,35 @@ modules:
       - gnome-software
       - gnome-software-rpm-ostree
       - gnome-tour
-      - gnome-terminal-nautilus
+      - tlp
+      - tlp-rdw
+      - power-profiles-daemon
 
   - type: default-flatpaks
-    notify: true   # Send notification after install/uninstall is finished (true/false)
+    notify: true
     system:
       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
       repo-name: flathub
       install:
       # Utilities
       - com.github.tchx84.Flatseal
+      - com.github.unrud.VideoDownloader
+      - com.mattjakeman.ExtensionManager
+      - io.github.fabrialberio.pinapp
+      - it.mijorus.gearlever
+      - org.gustavoperedo.FontDownloader
+      - org.mozilla.firefox
+      remove:
+      # - org.gnome.eog
+    user:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      install:
+      # Utilities
       - com.github.zocker_160.SyncThingy
       - com.github.marhkb.Pods
-      - io.github.fabrialberio.pinapp
-      - org.gustavoperedo.FontDownloader
-      - com.mattjakeman.ExtensionManager
-      - com.github.unrud.VideoDownloader
-      - it.mijorus.gearlever
       # Communication/Web
       - com.discordapp.Discord
-      - org.mozilla.firefox
       - org.gnome.Epiphany # For PWAs
       - com.microsoft.Edge # For MS Teams / Office.
       - us.zoom.Zoom
@@ -157,29 +187,3 @@ modules:
       - com.valvesoftware.Steam
       - com.spotify.Client
       - sh.cider.Cider
-      remove:
-      # - org.gnome.eog
-    user:
-      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      repo-name: flathub
-
-  - type: script
-    scripts:
-      # this sets up the proper policy & signing files for signed images to work
-      - signing.sh
-
-  - type: bling
-    install:
-      - ublue-update
-      - dconf-update-service
-      - 1password
-      - laptop
-
-  - type: akmods
-    install:
-      - openrazer
-      - openrgb
-      - xpadneo
-      - xonedo
-      - wl
-      - v4l2loopback
