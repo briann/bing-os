@@ -31,14 +31,13 @@ modules:
       - ublue-update
       - dconf-update-service
       - 1password
-      - laptop
 
   - type: akmods
     install:
       - openrazer
       - openrgb
       - xpadneo
-      - xonedo
+      - xone
       - wl
       - v4l2loopback
 
