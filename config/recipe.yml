@@ -148,7 +148,6 @@ modules:
       - gnome-software
       - gnome-software-rpm-ostree
       - gnome-tour
-      - tlp-rdw
       - power-profiles-daemon
 
   - type: default-flatpaks
