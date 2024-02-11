@@ -145,11 +145,9 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
-      # - gnome-extensions-app
       - gnome-software
       - gnome-software-rpm-ostree
       - gnome-tour
-      - tlp
       - tlp-rdw
       - power-profiles-daemon
 
