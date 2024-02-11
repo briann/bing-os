@@ -1,4 +1,4 @@
-# `bing-os` (Bingo's OS)
+# `bingo-os`
 
 TLDR
 - Forked / built on top of Universal Blue (https://github.com/ublue-os/startingpoint).
