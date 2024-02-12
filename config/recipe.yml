@@ -8,17 +8,7 @@ modules:
   - type: files
     files:
       - usr: /usr
-      - etc: /etc 
-
-  - type: script
-    scripts:
-      - signing.sh
-
-  - type: bling
-    install:
-      - ublue-update
-      - dconf-update-service
-      - 1password
+      - etc: /etc
 
   - type: akmods
     install:
@@ -29,5 +19,18 @@ modules:
       - wl
       - v4l2loopback
 
+  - type: bling
+    install:
+      - ublue-update
+      - dconf-update-service
+      - 1password
+
   - from-file: recipe-rpm-ostree.yml
   - from-file: recipe-default-flatpaks.yml
+
+  - type: script
+    scripts:
+      - signing.sh
+      - user-groups.sh
+      - enable-services.sh
+      - desktop-customizations.sh

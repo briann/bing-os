@@ -3,7 +3,7 @@
 [![build-bingo-os](https://github.com/briann/bingo-os/actions/workflows/build.yml/badge.svg)](https://github.com/briann/bingo-os/actions/workflows/build.yml)
 
 ## TLDR
-- This is a customized OS built for `@briann`'s development setup. No guarantees this will work on anything except for my own devices, but you're welcome to try!
+- This is a customized OS built for @briann's development setup. No guarantees this will work on anything except for my own devices, but you're welcome to try!
 - Forked / using [Universal Blue](https://universal-blue.org/)'s [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint), based on the [ublue-os/silverblue-main](https://github.com/ublue-os/main) images, and inspired by [Bluefin](https://github.com/ublue-os/bluefin).
 - For more information about customizations made on top of the base image, see the [Customizations](#customizations) section below.
 
