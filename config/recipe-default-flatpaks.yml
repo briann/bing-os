@@ -9,6 +9,7 @@ system:
   - com.github.unrud.VideoDownloader
   - com.mattjakeman.ExtensionManager
   - io.github.fabrialberio.pinapp
+  - io.missioncenter.MissionCenter
   - it.mijorus.gearlever
   - org.gustavoperedo.FontDownloader
   - org.mozilla.firefox

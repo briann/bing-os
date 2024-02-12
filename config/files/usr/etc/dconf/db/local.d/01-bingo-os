@@ -1,0 +1,78 @@
+[org/gnome/desktop/background]
+picture-uri='file:///usr/share/backgrounds/wind.jpg'
+picture-options='zoom'
+
+[org/gnome/desktop/interface]
+enable-hot-corners=false
+clock-show-weekday=true
+cursor-theme="Yaru"
+icon-theme="Yaru-blue"
+gtk-theme="Yaru-blue"
+font-antialiasing="rgba"
+font-name="Ubuntu 12"
+document-font-name="Ubuntu 12"
+monospace-font-name="Ubuntu Mono 12"
+
+[org/gnome/desktop/sound]
+allow-volume-above-100-percent=true
+theme-name="freedesktop"
+
+[org/gnome/desktop/wm/preferences]
+button-layout=":minimize,maximize,close"
+num-workspaces='4'
+title-bar-font="Ubuntu Bold 12"
+
+[org/gnome/desktop/wm/keybindings]
+switch-applications = ['<Super>Tab']
+switch-applications-backward = ['<Shift><Super>Tab']
+switch-windows = ['<Alt>Tab']
+switch-windows-backward = ['<Shift><Alt>Tab']
+
+[org/gnome/desktop/peripherals/touchpad]
+tap-to-click=true
+
+[org/gnome/shell/extensions/dash-to-dock]
+dock-fixed=true
+force-straight-corner=false
+custom-theme-shrink=true
+disable-overview-on-startup=true
+transparency-mode='DYNAMIC'
+animation-time=0.15
+background-color='rgb(40,40,40)'
+background-opacity=0.8
+custom-background-color=true
+customize-alphas=true
+max-alpha=0.8
+min-alpha=0.5
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+binding='<Control><Shift>Escape'
+command="flatpak run io.missioncenter.MissionCenter"
+name='mission-center'
+
+[org/gtk/settings/file-chooser]
+sort-directories-first=true
+
+[org/gtk/gtk4/settings/file-chooser]
+sort-directories-first=true
+
+[org/gnome/software]
+allow-updates=false
+download-updates=false
+download-updates-notify=false
+
+[org/gnome/shell/extensions/Logo-menu]
+hide-forcequit=false
+hide-softwarecentre=true
+menu-button-extensions-app='com.mattjakeman.ExtensionManager.desktop'
+menu-button-icon-image=1
+menu-button-software-center='gnome-software'
+menu-button-system-monitor='flatpak run io.missioncenter.MissionCenter'
+menu-button-terminal='gnome-terminal'
+show-activities-button=true
+show-gamemode=false
+show-lockscreen=true
+show-pods=true
+show-power-option=false
+show-power-options=true
+
