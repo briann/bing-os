@@ -30,37 +30,25 @@
 
 ### Packages (layered RPMs)
 
-See [`recipe.yml`](config/recipe.yml).
+See [`recipe-rpm-ostree.yml`](config/recipe-rpm-ostree.yml).
 
 ### Flatpaks
 
+See [`recipe-default-flatpaks.yml`](config/recipe-default-flatpaks.yml).
+
+### Kernel modifications, tweaks, everything else
+
 See [`recipe.yml`](config/recipe.yml).
 
-### Kernel modifications
+### Files
 
-See [`recipe.yml`](config/recipe.yml).
+**`/etc` files**: Are located in [`config/files/etc`](config/files/etc/) and are copied to `/etc`. This provides `yum` repository definitions needed for image construction.
 
-### Additional tweaks
-
-See [r`ecipe.yml`](config/recipe.yml).
-
-### `/etc` files
-
-Are located in [`config/files/etc`](config/files/etc/) and are copied to `/etc`. This provides `yum` repository definitions needed for image construction.
-
-### `/usr` files
-
-Are located in [`config/files/usr`](config/files/usr/) and are copied to `/usr`. 
-
-#### Gnome configs
-
-Are provided in the [`config/files/usr/etc/dconf/db/local.d`](config/files/usr/etc/dconf/db/local.d/) directory. Currently this sets:
-- Default wallpaper (wallpapers images are in [`config/files/usr/share/backgrounds`](config/files/usr/share/backgrounds/)).
-- ...
-
-#### `just` scripts
-
-TBD
+**`/usr` files**: Are located in [`config/files/usr`](config/files/usr/) and are copied to `/usr`.  This provides:
+- Gnome configs in the [`config/files/usr/etc/dconf/db/local.d`](config/files/usr/etc/dconf/db/local.d/) directory. Currently this sets:
+   - Default wallpaper (wallpapers images are in [`config/files/usr/share/backgrounds`](config/files/usr/share/backgrounds/)).
+   - ...
+- `just` scripts: TBD
 
 ## Development
 
