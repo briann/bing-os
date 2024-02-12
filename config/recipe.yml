@@ -31,6 +31,5 @@ modules:
   - type: script
     scripts:
       - signing.sh
-      - user-groups.sh
       - enable-services.sh
       - desktop-customizations.sh
