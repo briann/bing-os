@@ -4,6 +4,20 @@ system:
   repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
   repo-name: flathub
   install:
+  # OS Apps
+  - org.fedoraproject.MediaWriter
+  - org.gnome.baobab
+  - org.gnome.Calculator
+  - org.gnome.Characters
+  - org.gnome.Cheese
+  - org.gnome.clocks
+  - org.gnome.Connections
+  - org.gnome.Evince
+  - org.gnome.font-viewer
+  - org.gnome.Logs
+  - org.gnome.Loupe
+  - org.gnome.NautilusPreviewer
+  - org.gnome.TextEditor
   # Utilities
   - com.github.tchx84.Flatseal
   - com.github.unrud.VideoDownloader
@@ -12,6 +26,7 @@ system:
   - io.missioncenter.MissionCenter
   - it.mijorus.gearlever
   - org.gustavoperedo.FontDownloader
+  - org.localsend.localsend_app
   - org.mozilla.firefox
 user:
   repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
