@@ -1,3 +1,6 @@
+[org/gnome/shell] 
+enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com', 'dash-to-dock@micxgx.gmail.com', 'blur-my-shell@aunetx', 'gsconnect@andyholmes.github.io', 'logomenu@aryan_k', 'tailscale@joaophi.github.com']
+
 [org/gnome/desktop/background]
 picture-uri='file:///usr/share/backgrounds/wind.jpg'
 picture-options='zoom'
