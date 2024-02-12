@@ -1,0 +1,31 @@
+type: default-flatpaks
+notify: true
+system:
+  repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+  repo-name: flathub
+  install:
+  # Utilities
+  - com.github.tchx84.Flatseal
+  - com.github.unrud.VideoDownloader
+  - com.mattjakeman.ExtensionManager
+  - io.github.fabrialberio.pinapp
+  - it.mijorus.gearlever
+  - org.gustavoperedo.FontDownloader
+  - org.mozilla.firefox
+user:
+  repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+  repo-name: flathub
+  install:
+  # Utilities
+  - com.github.zocker_160.SyncThingy
+  - com.github.marhkb.Pods
+  # Communication/Web
+  - com.discordapp.Discord
+  - org.gnome.Epiphany # For PWAs
+  - com.microsoft.Edge # For MS Teams / Office.
+  - us.zoom.Zoom
+  # Entertainment
+  - com.moonlight_stream.Moonlight
+  - com.valvesoftware.Steam
+  - com.spotify.Client
+  - sh.cider.Cider
