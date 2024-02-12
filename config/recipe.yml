@@ -30,6 +30,7 @@ modules:
 
   - type: script
     scripts:
-      - signing.sh
       - enable-services.sh
       - desktop-customizations.sh
+
+  - type: signing
