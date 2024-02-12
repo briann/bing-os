@@ -28,13 +28,22 @@ modules:
   - from-file: recipe-rpm-ostree.yml
   - from-file: recipe-default-flatpaks.yml
 
-  - type: script
-    scripts:
-      - enable-services.sh
-      - desktop-customizations.sh
+  - type: systemd
+    system:
+      enabled:
+        - tuned.service
+        - rpm-ostree-countme.service
+        - tailscaled.service
+        - dconf-update.service
+        - ublue-update.timer
+        - docker.socket
   
   - type: gschema-overrides
     include:
       - zz1-bingo-os.gschema.override
+
+  - type: script
+    scripts:
+      - desktop-customizations.sh
 
   - type: signing
