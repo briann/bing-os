@@ -32,5 +32,9 @@ modules:
     scripts:
       - enable-services.sh
       - desktop-customizations.sh
+  
+  - type: gschema-overrides
+    include:
+      - zz1-bingo-os.gschema.override
 
   - type: signing
