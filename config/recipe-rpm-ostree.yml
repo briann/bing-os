@@ -58,7 +58,6 @@ install:
   - gnome-shell-extension-blur-my-shell
   - gnome-shell-extension-dash-to-dock
   - gnome-shell-extension-gsconnect
-  - gnome-shell-extension-logo-menu
   - gnome-shell-extension-tailscale-gnome-qs
   - nautilus-gsconnect
   - nautilus-open-any-terminal
