@@ -1,7 +1,6 @@
 type: rpm-ostree
 repos:
 # Additional repos are defined in `config/files/etc/yum.repos.d`.
-- https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-%OS_VERSION%/ublue-os-staging-fedora-%OS_VERSION%.repo
 install:
   # System
   - bash-color-prompt
@@ -31,11 +30,6 @@ install:
   - steam-devices
   - tailscale
   - tmux
-  - tuned
-  - tuned-ppd
-  - tuned-profiles-atomic
-  - tuned-utils
-  - tuned-utils-systemtap
   - wireguard-tools
   - wl-clipboard
   - yaru-theme
@@ -58,9 +52,7 @@ install:
   - gnome-shell-extension-blur-my-shell
   - gnome-shell-extension-dash-to-dock
   - gnome-shell-extension-gsconnect
-  - gnome-shell-extension-tailscale-gnome-qs
   - nautilus-gsconnect
-  - nautilus-open-any-terminal
   # Development, containers, and virtualization
   - code
   - containerd.io

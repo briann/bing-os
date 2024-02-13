@@ -26,6 +26,7 @@ modules:
       - etc: /etc
 
   - from-file: recipe-rpm-ostree.yml
+  - from-file: recipe-rpm-ostree-ublue-staging.yml
   - from-file: recipe-default-flatpaks.yml
   - from-file: recipe-fonts.yml
 
