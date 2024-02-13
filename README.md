@@ -17,7 +17,7 @@
    ```
    systemctl reboot
    ```
-1. After booting into the signed image, rebase onto the signed image:
+1. After booting into the unsigned image, rebase onto the signed image:
    ```
    rpm-ostree rebase ostree-image-signed:docker://ghcr.io/briann/bingo-os:latest
    ```
