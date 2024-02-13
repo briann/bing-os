@@ -5,11 +5,6 @@ base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 39
 
 modules:
-  - type: files
-    files:
-      - usr: /usr
-      - etc: /etc
-
   - type: akmods
     install:
       - openrazer
@@ -24,6 +19,11 @@ modules:
       - ublue-update
       - dconf-update-service
       - 1password
+
+  - type: files
+    files:
+      - usr: /usr
+      - etc: /etc
 
   - from-file: recipe-rpm-ostree.yml
   - from-file: recipe-default-flatpaks.yml
