@@ -23,7 +23,6 @@ theme-name="freedesktop"
 [org.gnome.desktop.wm.preferences]
 button-layout=":minimize,maximize,close"
 num-workspaces=3
-title-bar-font="Ubuntu Bold 12"
 
 [org.gnome.desktop.wm.keybindings]
 switch-applications = ['<Super>Tab']
