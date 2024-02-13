@@ -12,9 +12,9 @@ cursor-theme="Yaru"
 icon-theme="Yaru-blue"
 gtk-theme="Yaru-blue"
 font-antialiasing="rgba"
-font-name="Ubuntu 12"
-document-font-name="Ubuntu 12"
-monospace-font-name="Ubuntu Mono 12"
+font-name="Ubuntu Nerd Font Regular 12"
+document-font-name="Ubuntu Nerd Font Regular 12"
+monospace-font-name="UbuntuMono Nerd Font Regular 12"
 
 [org.gnome.desktop.sound]
 allow-volume-above-100-percent=true
