@@ -25,6 +25,7 @@
    ```
    systemctl reboot
    ```
+1. On first boot, you may want to run `ujust fix-groups` to set the proper docker group.
 
 ## Customizations
 
@@ -36,19 +37,57 @@ See [`recipe-rpm-ostree.yml`](config/recipe-rpm-ostree.yml).
 
 See [`recipe-default-flatpaks.yml`](config/recipe-default-flatpaks.yml).
 
-### Kernel modifications, tweaks, everything else
+### Fonts
 
-See [`recipe.yml`](config/recipe.yml).
+See [`recipe-fonts.yml`](config/recipe-fonts.yml).
+
+### `akmods`
+
+See [`recipe.yml`](config/recipe.yml). Currently the following are loaded:
+```
+- openrazer
+- openrgb
+- xpadneo
+- xone
+- wl
+- v4l2loopback
+```
+
+### `bling`
+See [`recipe.yml`](config/recipe.yml). Currently the following are used:
+```
+- ublue-update
+- dconf-update-service
+- 1password
+```
+
+### `systemd`
+See [`recipe.yml`](config/recipe.yml). Currently the following services are enabled:
+```
+- tuned.service
+- rpm-ostree-countme.service
+- tailscaled.service
+- dconf-update.service
+- ublue-update.timer
+- docker.socket
+```
 
 ### Files
 
-**`/etc` files**: Are located in [`config/files/etc`](config/files/etc/) and are copied to `/etc`. This provides `yum` repository definitions needed for image construction.
+**`/etc` files**: Are located in [`config/files/etc`](config/files/etc/) and are copied to `/etc`. This includes:
+- `yum` repository definitions needed for image construction.
+- [`ublue-update.toml`](config/files/etc/ublue-update/ublue-update.toml) to configure `ublue-update`.
 
 **`/usr` files**: Are located in [`config/files/usr`](config/files/usr/) and are copied to `/usr`.  This provides:
-- Gnome configs in the [`config/files/usr/etc/dconf/db/local.d`](config/files/usr/etc/dconf/db/local.d/) directory. Currently this sets:
-   - Default wallpaper (wallpapers images are in [`config/files/usr/share/backgrounds`](config/files/usr/share/backgrounds/)).
-   - ...
-- `just` scripts: TBD
+- System config files:
+   - [`/usr/etc/sysctl.conf`](config/files/usr/etc/sysctl.conf) which sets `fs.file-max`.
+   - [`/usr/lib/sysctl.d/*.conf`](config/files/usr/lib/sysctl.d/) which set `fs.inotify` and docker configs.
+- Wallpaper image files in [`/usr/share/backgrounds`](config/files/usr/share/backgrounds/).
+- Just scripts in [`/usr/share/ublue-os/just`](config/files/usr/share/ublue-os/just/60-custom.just) - currently just providing `fix-groups`.
+
+### Gnome settings
+Are defined in [`zz1-bingo-os.gschema.override`](config/gschema-overrides/zz1-bingo-os.gschema.override).
+
 
 ## Development
 
