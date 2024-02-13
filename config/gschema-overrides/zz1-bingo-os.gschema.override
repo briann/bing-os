@@ -15,6 +15,7 @@ font-antialiasing="rgba"
 font-name="Ubuntu Nerd Font Regular 12"
 document-font-name="Ubuntu Nerd Font Regular 12"
 monospace-font-name="UbuntuMono Nerd Font Regular 12"
+color-scheme="prefer-dark"
 
 [org.gnome.desktop.sound]
 allow-volume-above-100-percent=true
