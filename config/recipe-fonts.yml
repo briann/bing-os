@@ -1,0 +1,28 @@
+type: fonts
+fonts:
+  nerd-fonts:
+    - DroidSansMono
+    - FiraCode
+    - FiraMono
+    - GeistMono
+    - Go-Mono
+    - Hack
+    - Inconsolata
+    - JetBrainsMono
+    - NerdFontsSymbolsOnly
+    - ProFont
+    - RobotoMono
+    - SourceCodePro
+    - Terminus
+    - Ubuntu
+    - UbuntuMono
+  google-fonts:
+    - Fira Sans
+    - Inter
+    - Lato
+    - Merriweather
+    - Noto Sans
+    - Noto Serif
+    - Open Sans
+    - Roboto
+    - Roboto Slab
