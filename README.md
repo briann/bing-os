@@ -65,7 +65,6 @@ See [`recipe.yml`](config/recipe.yml). Currently the following are used:
 See [`recipe.yml`](config/recipe.yml). Currently the following services are enabled:
 ```
 - tuned.service
-- rpm-ostree-countme.service
 - tailscaled.service
 - dconf-update.service
 - ublue-update.timer

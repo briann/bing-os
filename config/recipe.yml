@@ -33,7 +33,6 @@ modules:
     system:
       enabled:
         - tuned.service
-        - rpm-ostree-countme.service
         - tailscaled.service
         - dconf-update.service
         - ublue-update.timer
