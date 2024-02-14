@@ -38,6 +38,9 @@ modules:
         - dconf-update.service
         - ublue-update.timer
         - docker.socket
+    user:
+      enabled:
+        - podman.socket
   
   - type: gschema-overrides
     include:
