@@ -13,9 +13,9 @@ cursor-theme="Yaru"
 icon-theme="Yaru-blue"
 gtk-theme="Yaru-blue"
 font-antialiasing="rgba"
-font-name="Ubuntu Nerd Font Regular 12"
-document-font-name="Ubuntu Nerd Font Regular 12"
-monospace-font-name="UbuntuMono Nerd Font Regular 12"
+font-name="Ubuntu Regular 12"
+document-font-name="Ubuntu Regular 12"
+monospace-font-name="Ubuntu Mono Regular 12"
 color-scheme="prefer-dark"
 
 [org.gnome.desktop.sound]
