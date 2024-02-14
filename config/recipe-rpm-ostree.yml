@@ -6,6 +6,7 @@ install:
   - bash-color-prompt
   - dbus-x11
   - distrobox
+  - glances
   - glow
   - gum
   - htop
