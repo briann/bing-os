@@ -87,6 +87,13 @@ See [`recipe.yml`](config/recipe.yml). Currently the following services are enab
 ### Gnome settings
 Are defined in [`zz1-bingo-os.gschema.override`](config/gschema-overrides/zz1-bingo-os.gschema.override).
 
+## Post-install steps
+
+- `ujust fix-groups`
+- Organize icons in app drawer
+- Set terminal profile, open terminal via keyboard shortcut Ctrl+Alt+T, etc.
+- Set up distrobox for use `ujust assemble`.
+- Set up webapps via Epiphany (e.g., Whatsapp..)
 
 ## Development
 
