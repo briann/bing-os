@@ -6,8 +6,8 @@
 
 name: build-bingo-os
 on: # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
-  schedule:
-    - cron: "30 16 * * *"
+  # schedule:
+  #   - cron: "30 16 * * *"
   push:
     branches:
       - live
